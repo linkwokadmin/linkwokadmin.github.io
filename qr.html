@@ -182,7 +182,7 @@
                         pdf.text(batch, ((j * 70) + 35), ((i * 37) + 18));
                         var item = "ITEM :" + formData.item;
                         pdf.text(item, ((j * 70) + 35), ((i * 37) + 22));
-                        var date = "DATE :" + new Date(formData.date.toLocaleString('en-us',{month:'short', year:'numeric'}));
+                        var date = "DATE :" + new Date(formData.date).toLocaleString('en-us',{month:'short', year:'numeric'});
                         pdf.text(date, ((j * 70) + 35), ((i * 37) + 26))
                         count++
                     }
